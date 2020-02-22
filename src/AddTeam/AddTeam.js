@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './AddTeam.css';
+import Navbar from '../Navbar/Navbar';
 
 
 
@@ -7,6 +8,7 @@ class AddTeam extends Component {
     render() {
         return (
             <div className="AddTeam">
+                <Navbar />
                 <header>
                     <h1>Add your team</h1>
                 </header>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SignupForm from '../SignupForm/SignupForm';
 import './About.css';
 import '../SignupForm/SignupForm.css';
+import Navbar from '../Navbar/Navbar';
 
 
 
@@ -9,6 +10,7 @@ class About extends Component {
     render() {
         return (
             <div className="About">
+                <Navbar />
                 <div className="AboutSection">
                     <header>
                         <h1>Fantasy Football Database</h1>
