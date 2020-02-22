@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+.TeamPageSection {
+    text-align: center;
+}
+
+.TeamSection {
+    border: 1px solid black;
+    margin: 20px 20px;
+}

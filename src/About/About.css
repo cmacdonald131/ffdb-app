@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.5;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  h2 {
+      text-align: center;
+  }
+
+  h3 {
+      text-align: center;
+  }
+
+  .Card {
+      text-align: center;
+      
+      border: 1px solid black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
