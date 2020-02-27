@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import About from '../About/About';
-import TeamPage from '../TeamPage/TeamPage';
-import AddTeam from '../AddTeam/AddTeam';
+import TeamPage from '../Routes/TeamPage/TeamPage';
+import AddTeam from '../Routes/AddTeam/AddTeam';
 import PrivateRoute from '../Utils/PrivateRoute'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
 import LoginForm from '../LoginForm/LoginForm'
@@ -17,21 +17,23 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route exact path="/" component={About} />
-        <Route exact path="/team-page" component={TeamPage} />
-        <Route exact path="/team-page/add-team" component={AddTeam} />
-        <PublicOnlyRoute
-          path={'/login'}
-          component={LoginForm}
-        />
-        <PublicOnlyRoute
-          path={'/register'}
-          component={RegistrationForm}
-        />
-        <PrivateRoute
-              path={'/article/:articleId'}
-              //component={ArticlePage}
-            />
+        <Switch>
+          <Route exact path="/" component={About} />
+          <Route exact path="/team-page" component={TeamPage} />
+          <Route exact path="/team-page/add-team" component={AddTeam} />
+          <PublicOnlyRoute
+            path={'/login'}
+            component={LoginForm}
+          />
+          <PublicOnlyRoute
+            path={'/register'}
+            component={RegistrationForm}
+          />
+          <PrivateRoute
+            path={'/article/:articleId'}
+          //component={ArticlePage}
+          />
+        </Switch>
       </div>
     );
   }

@@ -7,6 +7,7 @@ const AuthApiService = {
     return fetch(`${config.API_ENDPOINT}/users`, {
       method: 'POST',
       headers: {
+        'Authorization': 'Bearer 4dbf9caa-5768-11ea-8e2d-0242ac130003',
         'content-type': 'application/json',
       },
       body: JSON.stringify(user),
@@ -17,13 +18,13 @@ const AuthApiService = {
           : res.json()
       )
   },
-  postLogin({ user_name, password }) {
+  postLogin({ username, password }) {
     return fetch(`${config.API_ENDPOINT}/auth/login`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
       },
-      body: JSON.stringify({ user_name, password }),
+      body: JSON.stringify({ username, password }),
     })
       .then(res =>
         (!res.ok)

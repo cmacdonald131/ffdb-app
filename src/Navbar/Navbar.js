@@ -8,9 +8,12 @@ class Navbar extends Component {
         return (
             <div className="Navbar">
                 <nav className="nav">
-                    <a href="#home" className="active">FFDb</a>
+                    <a href="/" className="active">FFDb</a>
                     <div id="myLinks">
-                        <a href="#Login" className="navLink">Login</a>
+                        <a href="/login" className="navLink">Login</a>
+                        <a href="/register" className="navLink">Register</a>
+                        <a href="/team-page" className="navLink">Team Page</a>
+                        <a href="/team-page/add-team" className="navLink">Add Team</a>
                     </div>
                 </nav>
             </div>
