@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AddTeam from '../AddTeam/AddTeam';
+//import AddTeam from '../AddTeam/AddTeam';
 import Navbar from '../../Navbar/Navbar';
 import './TeamPage.css';
 
@@ -48,7 +48,7 @@ class TeamPage extends Component {
 
 
                 </div>
-                <AddTeam />
+                
 
             </div>
         );

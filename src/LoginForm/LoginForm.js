@@ -6,7 +6,7 @@ import Navbar from '../Navbar/Navbar'
 
 export default class LoginForm extends Component {
   static defaultProps = {
-    onLoginSuccess: () => {}
+    onLoginSuccess: () => {this.props.history.push('/team-page')}
   }
 
   state = { error: null }

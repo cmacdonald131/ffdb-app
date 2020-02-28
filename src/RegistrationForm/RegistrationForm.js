@@ -5,7 +5,7 @@ import Navbar from '../Navbar/Navbar'
 
 export default class RegistrationForm extends Component {
   static defaultProps = {
-    onRegistrationSuccess: () => { }
+    onRegistrationSuccess: () => {this.props.history.push('/team-page')}
   }
 
   state = { error: null }

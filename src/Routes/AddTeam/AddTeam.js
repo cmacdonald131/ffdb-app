@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import config from '../../config'
 import './AddTeam.css';
 import Navbar from '../../Navbar/Navbar';
-import ApiContext from '../../ApiContext';
+//import ApiContext from '../../ApiContext';
+import TokenService from '../../Services/token-service'
 import uuid from 'uuid/v4';
 
 
-
-
 class AddTeam extends Component {
-    static contextType = ApiContext
+    //static contextType = ApiContext
     onSubmit = (e) => {
         e.preventDefault();
-        const teamName = e.target.teamName.value;
+        const teamname = e.target.teamname.value;
         const website = e.target.website.value;
         const username = e.target.username.value;
         const password = e.target.password.value;
@@ -21,7 +20,7 @@ class AddTeam extends Component {
         fetch(`${config.API_ENDPOINT}/team-page`, {
             method: "Post",
             body: JSON.stringify({
-                name: teamName,
+                name: teamname,
                 website: website,
                 username: username,
                 password: password,
@@ -29,16 +28,15 @@ class AddTeam extends Component {
                 
             }),
             headers: {
-                'Authorization': 'Bearer 4dbf9caa-5768-11ea-8e2d-0242ac130003',
+                'Authorization': `Bearer ${TokenService.getAuthToken()}`,
                 'content-type': 'application/json'
             }
         })
 
-            .then(note => {
-                return note.json()
+            .then(team => {
+                return team.json()
             }).then(data => {
-                this.context.refreshTeam(data)
-                this.props.history.push('/')
+                this.props.history.push('/team-page')
             })
 
     }
@@ -50,10 +48,10 @@ class AddTeam extends Component {
                     <h1>Add your team</h1>
                 </header>
                 <main className="AddTeamSection">
-                    <form className="add-team">
+                    <form onSubmit={this.onSubmit} className="add-team">
                         <section className="form-section">
                             <label>Team Name</label>
-                            <input type="text" name="team-name" placeholder="Team Name" required></input>
+                            <input type="text" name="teamname" placeholder="Team Name" required></input>
                         </section>
                         <section className="form-section">
                             <label>Website</label>
