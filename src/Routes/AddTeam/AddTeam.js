@@ -17,7 +17,7 @@ class AddTeam extends Component {
         const password = e.target.password.value;
         const id = uuid;
 
-        fetch(`${config.API_ENDPOINT}/team-page`, {
+        fetch(`${config.API_ENDPOINT}/teams`, {
             method: "Post",
             body: JSON.stringify({
                 name: teamname,
@@ -50,19 +50,19 @@ class AddTeam extends Component {
                 <main className="AddTeamSection">
                     <form onSubmit={this.onSubmit} className="add-team">
                         <section className="form-section">
-                            <label>Team Name</label>
+                            <label htmlFor="teamname">Team Name</label>
                             <input type="text" name="teamname" placeholder="Team Name" required></input>
                         </section>
                         <section className="form-section">
-                            <label>Website</label>
+                            <label htmlFor="website">Website</label>
                             <input type="text" name="website" placeholder="Enter your team site" required></input>
                         </section>
                         <section className="form-section">
-                            <label>Username</label>
+                            <label htmlFor="username">Username</label>
                             <input type="text" name="username" placeholder="Enter username" required></input>
                         </section>
                         <section className="form-section">
-                            <label>Password</label>
+                            <label htmlFor="password">Password</label>
                             <input type="text" name="password" placeholder="Enter password" required></input>
                         </section>
                         <button type="submit">Submit</button>

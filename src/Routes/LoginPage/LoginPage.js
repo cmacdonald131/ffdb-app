@@ -6,14 +6,14 @@ export default class LoginPage extends Component {
   static defaultProps = {
     location: {},
     history: {
-      push: () => {},
+      push: () => { },
     },
   }
 
   handleLoginSuccess = () => {
-    const { location, history } = this.props
-    const destination = (location.state || {}).from || '/'
-    history.push(destination)
+    console.log('hello world')
+    const { history } = this.props
+    history.push('/team-page')
   }
 
   render() {

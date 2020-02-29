@@ -1,7 +1,8 @@
 import React from 'react'
 
 export default React.createContext({
-  team: [],
+  teams: [],
   addTeam: () => {},
+  getTeams: () => {},
   deleteTeam: () => {},
 })

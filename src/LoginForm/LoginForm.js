@@ -6,11 +6,12 @@ import Navbar from '../Navbar/Navbar'
 
 export default class LoginForm extends Component {
   static defaultProps = {
-    onLoginSuccess: () => {this.props.history.push('/team-page')}
   }
 
   state = { error: null }
-
+  onLoginSuccess = () => {
+    this.props.history.push('/team-page')
+  }
   handleSubmitJwtAuth = ev => {
     ev.preventDefault()
     this.setState({ error: null })
@@ -23,7 +24,7 @@ export default class LoginForm extends Component {
       .then(res => {
         username.value = ''
         password.value = ''
-        this.props.onLoginSuccess()
+        this.onLoginSuccess()
       })
       .catch(res => {
         this.setState({ error: res.error })

@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
-//import AddTeam from '../AddTeam/AddTeam';
-import Navbar from '../../Navbar/Navbar';
-import './TeamPage.css';
+import React, { Component } from 'react'
+import Navbar from '../../Navbar/Navbar'
+import ApiContext from '../../ApiContext'
+import './TeamPage.css'
 
 class TeamPage extends Component {
+    static contextType= ApiContext;
+    componentDidMount() {
+        this.context.getTeams()
+    }
+
+
     render() {
         return (
             <div className="TeamPage">
@@ -45,8 +51,7 @@ class TeamPage extends Component {
                         <p>Link section to player articles</p>
                         <p>Link to team site</p>
                     </section>
-
-
+                    
                 </div>
                 
 
