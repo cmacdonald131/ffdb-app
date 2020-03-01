@@ -69,7 +69,7 @@ class App extends Component {
     return (
       <ApiContext.Provider value={{
         teams: this.state.teams,
-        getTeams: this.getTeams, 
+        getTeams: this.getTeams,
       }}>
         <div className="App">
           <Switch>
