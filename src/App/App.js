@@ -57,19 +57,36 @@ class App extends Component {
       }
     })
 
-      .then(team => {
-        return team.json()
+      .then(teams => {
+        return teams.json()
       }).then(data => {
         this.setState({
           teams: data
         })
       })
   }
+
+  deleteTeam = (id) => {
+    fetch(`${config.API_ENDPOINT}/teams/${id}`, {
+      method: "Delete",
+      headers: {
+        'Authorization': `Bearer ${TokenService.getAuthToken()}`,
+        'content-type': 'application/json'
+      }
+    })
+    .then(data => {
+      this.setState({
+        teams: this.state.teams.filter(team => team.id !== id)
+      })
+    })
+  }
+
   render() {
     return (
       <ApiContext.Provider value={{
         teams: this.state.teams,
         getTeams: this.getTeams,
+        deleteTeam: this.deleteTeam,
       }}>
         <div className="App">
           <Switch>

@@ -40,7 +40,7 @@ export default class LoginForm extends Component {
       >
         <Navbar />
         <div role='alert'>
-          {error && <p className='red'>{error}</p>}
+          {error && <p className='red'>{error.message}</p>}
         </div>
         <div className='username'>
           <label htmlFor='LoginForm__username'>

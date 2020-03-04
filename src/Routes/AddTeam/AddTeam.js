@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import config from '../../config'
-import './AddTeam.css';
-import Navbar from '../../Navbar/Navbar';
-//import ApiContext from '../../ApiContext';
+import './AddTeam.css'
+import Navbar from '../../Navbar/Navbar'
+import ApiContext from '../../ApiContext'
 import TokenService from '../../Services/token-service'
-import uuid from 'uuid/v4';
+import uuid from 'uuid/v4'
 
 
 class AddTeam extends Component {
-    //static contextType = ApiContext
+    static contextType = ApiContext
     onSubmit = (e) => {
         e.preventDefault();
         const teamname = e.target.teamname.value;
