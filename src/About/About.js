@@ -17,37 +17,37 @@ class About extends Component {
                     </section>
                     <section className="Card">
                         <header>
-                            <h3>Why FFDb</h3>
+                            <h3 className="header">Why FFDb</h3>
                         </header>
-                        <img src={require("../Images/footballfield.jpg")} alt="football_field" className="images"></img>
+                        <img src={require("../Images/football_field2.jpg")} alt="football_field" className="images"></img>
                         <p>Fantasy Football Database (FFDb) provides a centralized location for you to manage all of your teams.</p>
                     </section>
                     <section className="Card">
                         <header>
-                            <h3>Add your teams</h3>
+                            <h3 className="header">Add your teams</h3>
                         </header>
-                        <p>[<em>placeholder for screenshot of user homepage</em>]</p>
+                        <img src={require("../Images/football_image.jpg")} alt="football_field" className="images"></img>
                         <p>FFDb will store all login and site information so you don't have to.  Our app will provide easy access to all of your teams so you don't have to jump from site to site.</p>
                     </section>
                     <section className="Card">
                         <header>
-                            <h3>Keep track of your teams</h3>
+                            <h3 className="header">Keep track</h3>
                         </header>
-                        <p>[<em>placeholder for screenshot of user homepage</em>]</p>
+                        <img src={require("../Images/hurdle.jpg")} alt="hurdle" className="images"></img>
                         <p>Set reminders, check out player information, and matchup data to help you win each week.</p>
                     </section>
                     <section className="Card">
                         <header>
-                            <h3>Getting Started</h3>
+                            <h3 className="header">Getting Started</h3>
                         </header>
-                        <p>[<em>placeholder for screenshot of user homepage</em>]</p>
-                        <p>To get started just click the "Register" tab and fill out some basic information. Once you're registered you'll just have to login to your account, and start add all your fantasy football teams by filling out your league information on the "Add Teams" tab. From your team page you'll be able to see all of your teams, check scores and team progress all from one location!  If you're ready, let's get started!</p>
+                        <img src={require("../Images/Fantasy-football-image.png")} alt="logo" className="images"></img>
+                        <p>To get started just click the "Register" tab and fill out some basic information. Once you're registered you'll just have to login to your account, and start adding all your fantasy football teams by filling out your league information by clicking the "Add Team" button. From your team page you'll be able to see all of your teams, check scores and team progress, all from one location!  If you're ready, let's get started!</p>
                     </section>
                     <section className="Card">
                         <header>
-                            <h3>Wanna try it out?</h3>
+                            <h3 className="header">Wanna try it out?</h3>
                         </header>
-                        <p>[<em>placeholder for screenshot of user homepage</em>]</p>
+                        <img src={require("../Images/keenan.jpg")} alt="go for it" className="images"></img>
                         <p>If you'd like to try it out, simply login to our test account.</p>
                         <ul>
                             <li>Username: testTeam</li>

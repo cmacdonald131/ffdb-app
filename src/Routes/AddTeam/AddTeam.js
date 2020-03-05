@@ -4,6 +4,7 @@ import './AddTeam.css'
 import Navbar from '../../Navbar/Navbar'
 import ApiContext from '../../ApiContext'
 import TokenService from '../../Services/token-service'
+import { Button, Input, Required } from '../../Utils/Utils'
 import uuid from 'uuid/v4'
 
 
@@ -25,7 +26,7 @@ class AddTeam extends Component {
                 username: username,
                 password: password,
                 id: id,
-                
+
             }),
             headers: {
                 'Authorization': `Bearer ${TokenService.getAuthToken()}`,
@@ -50,24 +51,48 @@ class AddTeam extends Component {
                 <main className="AddTeamSection">
                     <form onSubmit={this.onSubmit} className="add-team">
                         <section className="form-section">
-                            <label htmlFor="teamname">Team Name</label>
-                            <input type="text" name="teamname" placeholder="Team Name" required></input>
+                            <label htmlFor="teamname"
+                            >Team Name <Required />
+                            </label>
+                            <Input
+                                type="text"
+                                name="teamname"
+                                placeholder="Team Name">
+                            </Input>
                         </section>
                         <section className="form-section">
-                            <label htmlFor="website">Website</label>
-                            <input type="text" name="website" placeholder="Enter your team site" required></input>
+                            <label htmlFor="website"
+                            >Website <Required />
+                            </label>
+                            <Input
+                                type="text"
+                                name="website"
+                                placeholder="Enter your team site">
+                            </Input>
                         </section>
                         <section className="form-section">
-                            <label htmlFor="username">Username</label>
-                            <input type="text" name="username" placeholder="Enter username" required></input>
+                            <label htmlFor="username"
+                            >Username <Required />
+                            </label>
+                            <Input
+                                type="text"
+                                name="username"
+                                placeholder="Enter username">
+                            </Input>
                         </section>
                         <section className="form-section">
-                            <label htmlFor="password">Password</label>
-                            <input type="text" name="password" placeholder="Enter password" required></input>
+                            <label htmlFor="password"
+                            >Password <Required />
+                            </label>
+                            <Input
+                                type="text"
+                                name="password"
+                                placeholder="Enter password">
+                            </Input>
                         </section>
-                        <button type="submit">Submit</button>
-                        <button type="reset">Reset</button>
-                        <button type="cancel">Cancel</button>
+                        <Button type="submit" className="submit">Submit</Button>
+                        <Button type="reset" className="reset">Reset</Button>
+                        <Button type="cancel" className="cancel">Cancel</Button>
                     </form>
                 </main>
             </div>

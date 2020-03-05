@@ -1,9 +1,12 @@
 * {
     box-sizing: border-box;
   }
-  
-  body {
+
+  .About {
     line-height: 1.5;
+    background: url(../Images/footballfield.jpg);
+    background-size: cover;
+    background-position: center center;
   }
 
   h1 {
@@ -12,6 +15,7 @@
 
   h2 {
       text-align: center;
+      color: #ffffff;
   }
 
   h3 {
@@ -26,6 +30,10 @@
       padding: 10px;
       align-content: center;
       
+  }
+
+  .header {
+      color: black;
   }
 
   .images {

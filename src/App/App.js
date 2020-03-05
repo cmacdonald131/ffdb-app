@@ -4,6 +4,7 @@ import About from '../About/About'
 import TeamPage from '../Routes/TeamPage/TeamPage'
 import AddTeam from '../Routes/AddTeam/AddTeam'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
+import PrivateRoute from '../Utils/PrivateRoute'
 import LoginForm from '../LoginForm/LoginForm'
 import RegistrationForm from '../RegistrationForm/RegistrationForm'
 import TokenService from '../Services/token-service'
@@ -100,6 +101,14 @@ class App extends Component {
             <PublicOnlyRoute
               path={'/register'}
               component={RegistrationForm}
+            />
+            <PrivateRoute
+              path={'/team-page'}
+              component={TeamPage}
+            />
+            <PrivateRoute
+              path={'/add-team'}
+              component={AddTeam}
             />
           </Switch>
         </div>

@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: url(../Images/football_field3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.RegistrationForm {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.Button {
+    margin-bottom: 30px;
+}
