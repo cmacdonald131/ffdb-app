@@ -23,7 +23,7 @@ class TeamPage extends Component {
                     {teams.map(team => (
                         <section className="TeamSection">
                             <header>
-                                <h2>{team.name}</h2>
+                                <h2 className="teamHead">{team.name}</h2>
                             </header>
                             <ul>
                                 <li>Username: {team.username}</li>

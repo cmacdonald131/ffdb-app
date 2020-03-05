@@ -12,6 +12,7 @@ class Navbar extends Component {
                     <div id="myLinks">
                         <a href="/login" className="navLink">Login</a>
                         <a href="/register" className="navLink">Register</a>
+                        <a href="/team-page" className="navLink">Team Page</a>
                     </div>
                 </nav>
             </div>
