@@ -4,7 +4,7 @@ import './AddTeam.css'
 import Navbar from '../../Navbar/Navbar'
 import ApiContext from '../../ApiContext'
 import TokenService from '../../Services/token-service'
-import { Button, Input, Required } from '../../Utils/Utils'
+import { Input, Required } from '../../Utils/Utils'
 import uuid from 'uuid/v4'
 
 
@@ -51,7 +51,7 @@ class AddTeam extends Component {
                 <main className="AddTeamSection">
                     <form onSubmit={this.onSubmit} className="add-team">
                         <section className="form-section">
-                            <label htmlFor="teamname"
+                            <label htmlFor="teamname" className="label"
                             >Team Name <Required />
                             </label>
                             <Input
@@ -61,7 +61,7 @@ class AddTeam extends Component {
                             </Input>
                         </section>
                         <section className="form-section">
-                            <label htmlFor="website"
+                            <label htmlFor="website" className="label"
                             >Website <Required />
                             </label>
                             <Input
@@ -71,7 +71,7 @@ class AddTeam extends Component {
                             </Input>
                         </section>
                         <section className="form-section">
-                            <label htmlFor="username"
+                            <label htmlFor="username" className="label"
                             >Username <Required />
                             </label>
                             <Input
@@ -81,7 +81,7 @@ class AddTeam extends Component {
                             </Input>
                         </section>
                         <section className="form-section">
-                            <label htmlFor="password"
+                            <label htmlFor="password" className="label"
                             >Password <Required />
                             </label>
                             <Input
@@ -90,9 +90,9 @@ class AddTeam extends Component {
                                 placeholder="Enter password">
                             </Input>
                         </section>
-                        <Button type="submit" className="submit">Submit</Button>
-                        <Button type="reset" className="reset">Reset</Button>
-                        <Button type="cancel" className="cancel">Cancel</Button>
+                        <button type="submit" className="Submit">Submit</button>
+                        <button type="reset" className="reset">Reset</button>
+                        <button type="cancel" className="cancel">Cancel</button>
                     </form>
                 </main>
             </div>

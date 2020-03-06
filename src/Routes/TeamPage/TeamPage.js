@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../../Navbar/Navbar'
 import ApiContext from '../../ApiContext'
-import { Button } from '../../Utils/Utils'
 import './TeamPage.css'
 
 class TeamPage extends Component {
@@ -30,21 +29,21 @@ class TeamPage extends Component {
                                 <li>Password: {team.password}</li>
                                 <li>{team.website}</li>
                             </ul>
-                            <Button
+                            <button
                                 className='team__delete'
                                 type='button'
                                 onClick={e => this.context.deleteTeam(team.id)}
                             >Delete Team
-                            </Button>
+                            </button>
                         </section>
 
                     ))}
-                    <Button 
+                    <button
                         className='add_team'
                         type='button'
                         onClick={e => this.props.history.push('/add-team')}
                     >Add Team
-                    </Button>
+                    </button>
 
                 </div>
 

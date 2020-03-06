@@ -1,45 +1,80 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .AddTeam {
-    background: url(../../Images/football_field3.jpg);
-    background-size: cover;
-    background-position: center center;
+  background: url(../../Images/football_field3.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 110vh;
 }
 
-label {
-    display: block;
+.label {
+  display: block;
 }
 
 form {
-    text-align: left;
+  text-align: left;
 }
 
 input {
-    width: 100%;
-    align-items: center;
+  width: 100%;
+  align-items: center;
 }
 
 .AddTeamSection {
-    align-content: center;
-    margin: 20px;
-    padding: 10px 10px;
-
+  align-content: center;
+  margin: 20px;
+  padding: 10px 10px;
 }
 
 h1 {
-    color: #ffffff;
+  color: #ffffff;
+  margin-top: 20px;
 }
 
-.Button {
-    margin-top: 10px;
+button {
+  order: 1px solid #aaa;
+  background-color: #eee;
+  font-size: 1.1em;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
 }
 
-.submit {
-    margin-right: 5px;
+.Submit {
+  margin-right: 5px;
 }
 
 .cancel {
-    margin-left: 5px;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .label {
+    margin-left: 130px;
+  }
+
+  .Submit {
+      margin-left: 30%;
+      margin-right: 10px;
+  }
+
+  .cancel {
+      margin-right: 30%;
+      margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+    .Submit {
+        margin-right: 20px;
+        margin-left: 39%;
+    }
+
+    .cancel {
+        margin-left: 20px;
+    }
 }

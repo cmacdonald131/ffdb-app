@@ -109,7 +109,7 @@ export default class RegistrationForm extends Component {
               id='RegistrationForm__email'>
             </Input>
           </div>
-          <Button type='submit'>
+          <Button type='submit' className="btn">
             Register
           </Button>
         </form>

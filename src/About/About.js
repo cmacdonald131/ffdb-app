@@ -3,8 +3,6 @@ import './About.css'
 import Navbar from '../Navbar/Navbar'
 
 
-
-
 class About extends Component {
     render() {
         return (
@@ -20,7 +18,7 @@ class About extends Component {
                             <h3 className="header">Why FFDb</h3>
                         </header>
                         <img src={require("../Images/football_field2.jpg")} alt="football_field" className="images"></img>
-                        <p>Fantasy Football Database (FFDb) provides a centralized location for you to manage all of your teams.</p>
+                        <p style={{textAlign: "center"}}>Fantasy Football Database (FFDb) provides a centralized location for you to manage all of your teams.</p>
                     </section>
                     <section className="Card">
                         <header>
@@ -34,7 +32,7 @@ class About extends Component {
                             <h3 className="header">Keep track</h3>
                         </header>
                         <img src={require("../Images/hurdle.jpg")} alt="hurdle" className="images"></img>
-                        <p>Set reminders, check out player information, and matchup data to help you win each week.</p>
+                        <p style={{textAlign: "center"}}>Set reminders, check out player information, and matchup data to help you win each week.</p>
                     </section>
                     <section className="Card">
                         <header>
@@ -48,16 +46,14 @@ class About extends Component {
                             <h3 className="header">Wanna try it out?</h3>
                         </header>
                         <img src={require("../Images/keenan.jpg")} alt="go for it" className="images"></img>
-                        <p>If you'd like to try it out, simply login to our test account.</p>
+                        <p style={{textAlign: "center"}}>If you'd like to try it out, simply login to our test account.</p>
                         <ul>
                             <li>Username: testTeam</li>
                             <li>Password: Password123!</li>
                         </ul>
-                        <p>Once logged in, check out what we have to offer. We know you'll like what you see!</p>
+                        <p style={{textAlign: "center"}}>Once logged in, check out what we have to offer. We know you'll like what you see!</p>
                     </section>
                 </div>
-
-
             </div>
         );
     }
