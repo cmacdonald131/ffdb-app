@@ -41,6 +41,12 @@ class AddTeam extends Component {
             })
 
     }
+
+    onCancel = (e) => {
+        e.preventDefault();
+        this.props.history.push('/team-page')
+    }
+
     render() {
         return (
             <div className="AddTeam">
@@ -92,7 +98,7 @@ class AddTeam extends Component {
                         </section>
                         <button type="submit" className="Submit">Submit</button>
                         <button type="reset" className="reset">Reset</button>
-                        <button type="cancel" className="cancel">Cancel</button>
+                        <button onClick={this.onCancel} type="cancel" className="cancel">Cancel</button>
                     </form>
                 </main>
             </div>
