@@ -1,19 +1,43 @@
-import React, { Component } from 'react';
-import './Navbar.css';
+import React, { Component } from 'react'
+import ApiContext from '../ApiContext'
+import './Navbar.css'
+import TokenService from '../Services/token-service'
 
 
 
 class Navbar extends Component {
+    static contextType = ApiContext
+
+    logout = () => {
+        this.context.setUser(null)
+        TokenService.clearAuthToken()
+    }
+
     render() {
+        let menus
+        if (this.context.user) {
+            menus = (
+                <div id="myLinks">
+                    <a href="/team-page" className="navLink">Team Page</a>
+                    <a href="#" onClick={this.logout} className="navLink">Logout</a>
+                </div>
+            )
+        }
+
+        else {
+            menus = (
+                <div id="myLinks">
+                    <a href="/login" className="navLink">Login</a>
+                    <a href="/register" className="navLink">Register</a>
+                </div>
+            )
+        }
+
         return (
             <div className="Navbar">
                 <nav className="nav">
                     <a href="/" className="active">FFDb</a>
-                    <div id="myLinks">
-                        <a href="/login" className="navLink">Login</a>
-                        <a href="/register" className="navLink">Register</a>
-                        <a href="/team-page" className="navLink">Team Page</a>
-                    </div>
+                    {menus}
                 </nav>
             </div>
         );

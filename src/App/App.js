@@ -21,6 +21,7 @@ class App extends Component {
   state = {
     hasError: false,
     teams: [],
+    user: TokenService.getAuthToken(),
   }
 
   static getDerivedStateFromError(error) {
@@ -38,6 +39,12 @@ class App extends Component {
       })
     }
   }
+
+  setUser = (user) => {
+    this.setState({
+      user
+    })
+  } 
 
   componentWillUnmount() {
     IdleService.unRegisterIdleResets()
@@ -87,6 +94,8 @@ class App extends Component {
     return (
       <ApiContext.Provider value={{
         teams: this.state.teams,
+        user: this.state.user,
+        setUser: this.setUser,
         getTeams: this.getTeams,
         deleteTeam: this.deleteTeam,
       }}>

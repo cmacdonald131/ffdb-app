@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import AuthApiService from '../Services/auth-api-service'
 import { Button, Input, Required } from '../Utils/Utils'
 import Navbar from '../Navbar/Navbar'
+import ApiContext from '../ApiContext'
 import './LoginForm.css'
 
 
 export default class LoginForm extends Component {
+  static contextType = ApiContext
   static defaultProps = {
   }
 
@@ -23,6 +25,7 @@ export default class LoginForm extends Component {
       password: password.value,
     })
       .then(res => {
+        this.context.setUser(username.value)
         username.value = ''
         password.value = ''
         this.onLoginSuccess()

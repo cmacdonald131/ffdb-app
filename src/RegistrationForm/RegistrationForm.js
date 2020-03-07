@@ -15,7 +15,8 @@ export default class RegistrationForm extends Component {
     ev.preventDefault()
     const { name, email, username, password, confirmPassword } = ev.target
 
-    if (password !== confirmPassword) {
+    if (password.value !== confirmPassword.value) {
+      console.log(password, confirmPassword)
       alert("Passwords don't match!")
     }
 
@@ -32,6 +33,7 @@ export default class RegistrationForm extends Component {
         username.value = ''
         password.value = ''
         confirmPassword.value = ''
+        console.log(this.props.history.push('/login'))
         this.props.onRegistrationSuccess()
       })
       .catch(res => {
