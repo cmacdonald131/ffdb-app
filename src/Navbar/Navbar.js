@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ApiContext from '../ApiContext'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 import TokenService from '../Services/token-service'
 
@@ -19,7 +20,7 @@ class Navbar extends Component {
             menus = (
                 <div id="myLinks">
                     <a href="/team-page" className="navLink">Team Page</a>
-                    <a href="#" onClick={this.logout} className="navLink">Logout</a>
+                    <Link to='/' onClick={this.logout} className="navLink">Logout</Link>
                 </div>
             )
         }
