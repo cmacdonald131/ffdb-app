@@ -27,7 +27,7 @@ class TeamPage extends Component {
                             <ul>
                                 <li>Username: {team.username}</li>
                                 <li>Password: {team.password}</li>
-                                <li>{team.website}</li>
+                                <li><a href={team.website} target="_blank" rel="noopener noreferrer">{team.website}</a></li>
                             </ul>
                             <button
                                 className='team__delete'
