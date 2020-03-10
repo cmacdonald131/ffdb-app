@@ -5,12 +5,12 @@ The live link to the app is https://ffdb-app.now.sh/
 ## Screenshots
 
 ![screenshot1](src/Images/screenshot1.png)
+![screenshot2](src/Images/screenshot2.png)
+![screenshot3](src/Images/screenshot3.png)
+![screenshot4](src/Images/screenshot4.png)
+![screenshot5](src/Images/screenshot5.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `npm test`
 
