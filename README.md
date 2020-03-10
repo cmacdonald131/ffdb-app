@@ -17,9 +17,9 @@ This app was designed to create a central location for people who play fantasy f
 ### Technology Used
 
 This app was built using:
-React
-CSS
-Node
-Express
+React,
+CSS,
+Node,
+Express,
 PostreSQL
 
