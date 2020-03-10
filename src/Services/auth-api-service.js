@@ -3,6 +3,8 @@ import TokenService from './token-service'
 import IdleService from './idle-service'
 
 const AuthApiService = {
+
+  //handles the call to the api to post new user to database
   postUser(user) {
     return fetch(`${config.API_ENDPOINT}/users`, {
       method: 'POST',
@@ -18,6 +20,8 @@ const AuthApiService = {
           : res.json()
       )
   },
+
+  //handles call to api that posts user login
   postLogin({ username, password }) {
     return fetch(`${config.API_ENDPOINT}/auth/login`, {
       method: 'POST',
@@ -41,6 +45,8 @@ const AuthApiService = {
         return res
       })
   },
+
+  //handles call to refresh the JWT token
   postRefreshToken() {
     return fetch(`${config.API_ENDPOINT}/auth/refresh`, {
       method: 'POST',

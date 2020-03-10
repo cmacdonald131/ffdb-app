@@ -11,10 +11,14 @@ export default class LoginForm extends Component {
   static defaultProps = {
   }
 
+  //when a successful login occurs the team page is rendered
+
   state = { error: null }
   onLoginSuccess = () => {
     this.props.history.push('/team-page')
   }
+
+  //On clicking the Login button when entering correct login information a call is sent to post an authorized login to the server through a JWT 
   handleSubmitJwtAuth = ev => {
     ev.preventDefault()
     this.setState({ error: null })

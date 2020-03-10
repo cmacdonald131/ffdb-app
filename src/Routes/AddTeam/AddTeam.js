@@ -10,6 +10,7 @@ import uuid from 'uuid/v4'
 
 class AddTeam extends Component {
     static contextType = ApiContext
+    //creates new team from information input and posts it to teams endpoint
     onSubmit = (e) => {
         e.preventDefault();
         const teamname = e.target.teamname.value;

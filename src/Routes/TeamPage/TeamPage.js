@@ -9,7 +9,6 @@ class TeamPage extends Component {
         this.context.getTeams()
     }
 
-
     render() {
         const { teams } = this.context;
         return (

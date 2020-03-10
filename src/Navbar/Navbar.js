@@ -14,6 +14,8 @@ class Navbar extends Component {
         TokenService.clearAuthToken()
     }
 
+    //when successfully logged in the navbar will display a link for the team page and log out.  When logged out it will show links for login and register
+
     render() {
         let menus
         if (this.context.user) {

@@ -11,7 +11,7 @@ import TokenService from '../Services/token-service'
 import IdleService from '../Services/idle-service'
 import AuthApiService from '../Services/auth-api-service'
 import config from '../config'
-//import '../Font/Graduate-Regular.ttf'
+
 
 import './App.css';
 import ApiContext from '../ApiContext';

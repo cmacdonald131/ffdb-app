@@ -15,10 +15,14 @@ export default class RegistrationForm extends Component {
     ev.preventDefault()
     const { name, email, username, password, confirmPassword } = ev.target
 
+    //confirms that the user input the correct password
+
     if (password.value !== confirmPassword.value) {
       console.log(password, confirmPassword)
       alert("Passwords don't match!")
     }
+
+    //posts information to server as a new user
 
     this.setState({ error: null })
     AuthApiService.postUser({
