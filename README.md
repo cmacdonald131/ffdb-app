@@ -1,10 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Fantasy Football Database (FFDb)
 
-## Available Scripts
+The live link to the app is https://ffdb-app.now.sh/
 
-In the project directory, you can run:
+## Screenshots
 
-### `npm start`
+![screenshot1](Images/screenshot1.png)
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
