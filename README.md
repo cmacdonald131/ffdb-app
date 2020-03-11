@@ -2,7 +2,7 @@
 
 The live link to the app is https://ffdb-app.now.sh/
 
-[FFDb backend Github Repo](https://github.com/cmacdonald131/ffdb-api.git)
+[FFDb Backend GitHub Repo](https://github.com/cmacdonald131/ffdb-api.git)
 
 ## Screenshots
 
