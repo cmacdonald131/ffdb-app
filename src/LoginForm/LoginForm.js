@@ -36,6 +36,7 @@ export default class LoginForm extends Component {
       })
       .catch(res => {
         this.setState({ error: res.error })
+        alert("We couldn't log you in with the username and/or password you entered.  Please try again.")
       })
   }
 
@@ -49,7 +50,7 @@ export default class LoginForm extends Component {
           onSubmit={this.handleSubmitJwtAuth}
         >
           <div role='alert'>
-            {error && <p className='red'>{error.message}</p>}
+            {error && <p className='red' style={{color: 'red'}}>{error.message}</p>}
           </div>
           <Navbar />
           <header>

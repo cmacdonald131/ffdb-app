@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTeam component renders a .AddTeam by default 1`] = `
+<div
+  className="AddTeam"
+>
+  <Navbar />
+  <header>
+    <h1>
+      Add your team
+    </h1>
+  </header>
+  <main
+    className="AddTeamSection"
+  >
+    <form
+      className="add-team"
+      onSubmit={[Function]}
+    >
+      <section
+        className="form-section"
+      >
+        <label
+          className="label"
+          htmlFor="teamname"
+        >
+          Team Name 
+          <Required />
+        </label>
+        <Input
+          name="teamname"
+          placeholder="Team Name"
+          type="text"
+        />
+      </section>
+      <section
+        className="form-section"
+      >
+        <label
+          className="label"
+          htmlFor="website"
+        >
+          Website 
+          <Required />
+        </label>
+        <Input
+          name="website"
+          placeholder="Enter your team site"
+          type="text"
+        />
+      </section>
+      <section
+        className="form-section"
+      >
+        <label
+          className="label"
+          htmlFor="username"
+        >
+          Username 
+          <Required />
+        </label>
+        <Input
+          name="username"
+          placeholder="Enter username"
+          type="text"
+        />
+      </section>
+      <section
+        className="form-section"
+      >
+        <label
+          className="label"
+          htmlFor="password"
+        >
+          Password 
+          <Required />
+        </label>
+        <Input
+          name="password"
+          placeholder="Enter password"
+          type="text"
+        />
+      </section>
+      <button
+        className="Submit"
+        type="submit"
+      >
+        Submit
+      </button>
+      <button
+        className="reset"
+        type="reset"
+      >
+        Reset
+      </button>
+      <button
+        className="cancel"
+        onClick={[Function]}
+        type="cancel"
+      >
+        Cancel
+      </button>
+    </form>
+  </main>
+</div>
+`;
+
+exports[`AddTeam component renders the AddTeam given props 1`] = `
+<div
+  className="AddTeam"
+>
+  <Navbar />
+  <header>
+    <h1>
+      Add your team
+    </h1>
+  </header>
+  <main
+    className="AddTeamSection"
+  >
+    <form
+      className="add-team"
+      onSubmit={[Function]}
+    >
+      <section
+        className="form-section"
+      >
+        <label
+          className="label"
+          htmlFor="teamname"
+        >
+          Team Name 
+          <Required />
+        </label>
+        <Input
+          name="teamname"
+          placeholder="Team Name"
+          type="text"
+        />
+      </section>
+      <section
+        className="form-section"
+      >
+        <label
+          className="label"
+          htmlFor="website"
+        >
+          Website 
+          <Required />
+        </label>
+        <Input
+          name="website"
+          placeholder="Enter your team site"
+          type="text"
+        />
+      </section>
+      <section
+        className="form-section"
+      >
+        <label
+          className="label"
+          htmlFor="username"
+        >
+          Username 
+          <Required />
+        </label>
+        <Input
+          name="username"
+          placeholder="Enter username"
+          type="text"
+        />
+      </section>
+      <section
+        className="form-section"
+      >
+        <label
+          className="label"
+          htmlFor="password"
+        >
+          Password 
+          <Required />
+        </label>
+        <Input
+          name="password"
+          placeholder="Enter password"
+          type="text"
+        />
+      </section>
+      <button
+        className="Submit"
+        type="submit"
+      >
+        Submit
+      </button>
+      <button
+        className="reset"
+        type="reset"
+      >
+        Reset
+      </button>
+      <button
+        className="cancel"
+        onClick={[Function]}
+        type="cancel"
+      >
+        Cancel
+      </button>
+    </form>
+  </main>
+</div>
+`;

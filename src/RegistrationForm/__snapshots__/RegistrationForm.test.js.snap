@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationForm component renders a form.RegistrationForm by default 1`] = `
+<div
+  className="wrapper"
+>
+  <Navbar />
+  <form
+    className="RegistrationForm"
+    onSubmit={[Function]}
+  >
+    <header>
+      <h1>
+        It's time to win
+      </h1>
+    </header>
+    <div
+      role="alert"
+    />
+    <div
+      className="name"
+    >
+      <label
+        htmlFor="RegistrationForm__name"
+      >
+        Name 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__name"
+        name="name"
+        placeholder="Enter your name"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="username"
+    >
+      <label
+        htmlFor="RegistrationForm__username"
+      >
+        Username 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__username"
+        name="username"
+        placeholder="Enter your Username"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="password"
+    >
+      <label
+        htmlFor="RegistrationForm__password"
+      >
+        Password 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__password"
+        name="password"
+        onClick={[Function]}
+        placeholder="Enter your Password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="confirmPassword"
+    >
+      <label
+        htmlFor="RegistrationForm__confirmPassword"
+      >
+        Confirm Password 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__confirmPassword"
+        name="confirmPassword"
+        placeholder="Confirm your Password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="email"
+    >
+      <label
+        htmlFor="RegistrationForm__email"
+      >
+        Email 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__email"
+        name="email"
+        placeholder="Enter your email"
+        required={true}
+        type="text"
+      />
+    </div>
+    <Button
+      className="btn"
+      type="submit"
+    >
+      Register
+    </Button>
+  </form>
+</div>
+`;
+
+exports[`RegistrationForm component renders the RegistrationForm given props 1`] = `
+<div
+  className="wrapper"
+>
+  <Navbar />
+  <form
+    className="RegistrationForm"
+    onSubmit={[Function]}
+  >
+    <header>
+      <h1>
+        It's time to win
+      </h1>
+    </header>
+    <div
+      role="alert"
+    />
+    <div
+      className="name"
+    >
+      <label
+        htmlFor="RegistrationForm__name"
+      >
+        Name 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__name"
+        name="name"
+        placeholder="Enter your name"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="username"
+    >
+      <label
+        htmlFor="RegistrationForm__username"
+      >
+        Username 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__username"
+        name="username"
+        placeholder="Enter your Username"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="password"
+    >
+      <label
+        htmlFor="RegistrationForm__password"
+      >
+        Password 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__password"
+        name="password"
+        onClick={[Function]}
+        placeholder="Enter your Password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="confirmPassword"
+    >
+      <label
+        htmlFor="RegistrationForm__confirmPassword"
+      >
+        Confirm Password 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__confirmPassword"
+        name="confirmPassword"
+        placeholder="Confirm your Password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="email"
+    >
+      <label
+        htmlFor="RegistrationForm__email"
+      >
+        Email 
+        <Required />
+      </label>
+      <Input
+        id="RegistrationForm__email"
+        name="email"
+        placeholder="Enter your email"
+        required={true}
+        type="text"
+      />
+    </div>
+    <Button
+      className="btn"
+      type="submit"
+    >
+      Register
+    </Button>
+  </form>
+</div>
+`;

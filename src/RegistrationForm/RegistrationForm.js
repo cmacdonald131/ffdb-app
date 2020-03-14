@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar'
 import './RegistrationForm.css'
 
 export default class RegistrationForm extends Component {
+
   static defaultProps = {
     onRegistrationSuccess: () => { this.props.history.push('/login') }
   }
@@ -43,6 +44,7 @@ export default class RegistrationForm extends Component {
       .catch(res => {
         this.setState({ error: res.error })
       })
+      
   }
 
   render() {
@@ -58,7 +60,7 @@ export default class RegistrationForm extends Component {
             <h1>It's time to win</h1>
           </header>
           <div role='alert'>
-            {error && <p className='red'>{error}</p>}
+            {error && <p className='red' style={{ color: 'red' }}>{error}</p>}
           </div>
           <div className='name'>
             <label htmlFor='RegistrationForm__name'>
@@ -93,7 +95,8 @@ export default class RegistrationForm extends Component {
               type='password'
               placeholder='Enter your Password'
               required
-              id='RegistrationForm__password'>
+              id='RegistrationForm__password'
+              onClick={e => alert('Password must be at least 8 characters, contain no spaces, one upper case, lower case, number and special character.')}>
             </Input>
           </div>
           <div className='confirmPassword'>

@@ -1,38 +1,39 @@
 .Navbar {
-    background-color: #001f2b;
-    width: 100%;
-    border-bottom: 1px solid #ffffff;
-  }
-  
+  background-color: #001f2b;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+
+.Navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  font-family: "Graduate-Regular";
+}
+
+.active {
+  margin-left: 10px;
+}
+
+.Navbar a:hover {
+  background-color: lightgray;
+  color: #ffffff;
+}
+
+.Navbar #myLinks {
+  float: right;
+}
+
+@media screen and (min-width: 700px) {
   .Navbar a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    display: inline-block;
-    text-align: center;
-    padding-right: 10px;
-    font-family: 'Graduate-Regular';
-  }
-  
-  .Navbar a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .Navbar a:hover {
-    background-color: #001f2b;
-    color: #ffffff;
-  }
-  
-  .Navbar #myLinks {
-    display: inline-block;
-    float: right;
+    margin-right: 15px;
+    font-size: 22px;
   }
 
-  @media screen and (min-width: 700px) {
-    .Navbar a {
-      font-size: 22px;
-    }
+  .active {
+    margin-left: 15px;
   }
+}
